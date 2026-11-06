@@ -14,7 +14,7 @@ import requests
 from bs4 import BeautifulSoup
 
 DB_PATH     = Path(__file__).parent / "jobs.db"
-DIGEST_PATH = Path(__file__).parent / "digest.html"
+DIGEST_PATH = Path(__file__).parent / "index.html"
 MAX_JOBS    = 50
 GEMINI_DELAY = 13  # seconds between API calls — stays within free tier (5 req/min)
 
@@ -403,7 +403,7 @@ h2{{color:#1a6b8a;margin-top:32px;margin-bottom:12px}}</style></head><body>
   Daniela Arias · Job Agent</p>
 </body></html>""")
 
-    print(f"\n✅ Digest ready — open digest.html in your browser")
+    print(f"\n✅ Digest ready — open index.html in your browser")
     print(f"   {len(strong)} strong · {len(review)} worth reviewing")
 
 # ── MAIN ──────────────────────────────────────────────────────────────────────
